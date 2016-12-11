@@ -1,0 +1,212 @@
+*{
+	margin: 0;padding: 0;list-style: none;
+}
+a{
+	text-decoration: none!important;
+}
+body {
+    font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', STHeiti, 华文细黑, sans-serif;
+    color: rgb(102, 102, 102);
+    font-size: 14px;background: #ededed;
+}
+/*nav start*/
+.nav-bar.navbar-inverse{
+    height: 100px;
+    background: url(../img/header-black-bg.png) repeat-x left top;
+}
+.navbar-brand{
+    display: block;
+	width: 50px;height: 50px;overflow: hidden;
+	background: url(../img/logo.png) no-repeat;
+    -webkit-background-size: 50px auto;
+    background-size: 50px;
+    /*text-indent: -9999px;*/
+}
+.navbar-btn{
+    width: 98px;
+    height:30px;
+    background: #151515;
+    background: linear-gradient(#181818,#131313);
+    border: 1px solid #2E2E2E;
+    border-radius: 4px;
+    font-size: 12px;
+    text-align: center;
+    color: #FFF;
+    opacity: .8;
+    cursor: pointer;
+    outline: 0!important;
+    position: relative;
+    top: 0px;
+}
+.navbar-nav	li{
+	background: #000;
+}				
+.navbar-btn:hover{
+	color: #fff;
+}
+.navbar-btn:active{
+	opacity: .5;
+}
+/*nav end*/
+
+/*banner start*/
+.carousel-inner .item:hover{
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform .3s cubic-bezier(.25, .46, .45, .94);
+	transition: -webkit-transform .3s cubic-bezier(.25, .46, .45, .94);
+	transition: transform .3s cubic-bezier(.25, .46, .45, .94);
+	transition: -webkit-transform .3s cubic-bezier(.25, .46, .45, .94)
+}
+/*.carousel-inner.animating .item{
+	-webkit-transform: translate3d(0, 0, 10px);
+	transform: translate3d(0, 0, 10px)
+}*/
+/*banner end*/
+
+/*first start*/
+#first{
+	border-radius: 5px;
+}
+#first li{margin: 10px auto;}
+#first li img{
+	display: block;
+	max-width: 100%;
+}
+#first li img:hover{
+	box-shadow: 5px -5px 38px rgba(0,0,0,.08);
+}
+/*first end*/
+/*second start*/
+#second{
+	margin: 20px auto;
+}
+
+#second li:first-child{
+	/*padding-bottom: 20px;*/
+}
+#second li{
+	height: 406px!important;
+	padding: 0;
+}
+#second .thumbnail{
+	/*padding-bottom:20px;*/
+}
+.thumbnail:hover{
+	box-shadow: 5px -5px 38px rgba(0,0,0,.1) inset;
+}
+#second .title{
+	font-weight: 400;
+	color: #666;
+}
+#second .caption .price{
+	font-family: Arial;
+    color: #DE4037;
+}
+#second .caption .btn{
+	display: none;
+	/*font-size: 12px;*/
+}
+#second .caption:hover .price{
+	display: none;
+}
+#second .caption:hover .btn{
+	display: inline-block;
+	/*background: #fafafa;*/
+}
+/*second end*/
+.six li{
+	position: relative;
+	height: 237px!important;
+}
+.six li .thumbnail{
+	min-height: 237px;
+}
+/*.sixth li .thumbnail.pics{
+	transform: rotateY(0deg);
+	transition: all 1s; 
+}*/
+.sixth li .pic{
+	width: 90px;height: 90px;margin: 20px auto;
+	background: url(../img/app-icon-sprite.png) no-repeat;
+	background-size: auto 90px;
+}
+.sixth li .pics .pic1{
+	background-position: -96px 0;
+}
+.sixth li .pics .pic3{
+	background-position: -288px 0;
+}
+.sixth li .pics .pic4{
+	background-position: -192px 0;
+}
+/*.six li .thumbnail.erweima{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: rotateY(-180deg);
+	transition: all 1s; 
+	opacity: 0;
+}*/
+/*.rotate1{
+	animation: rotate1 500ms ease-in forwards;
+}
+.rotate2{
+	animation: rotate2 500ms ease-out forwards;
+}
+@keyframes rotate1{
+	from{transform: rotateY(-180deg) ;opacity: 0;}
+	to{transform: rotateY(0deg);opacity: 1;}
+}
+@keyframes rotate2{
+	from{transform: rotateY(0deg) ;opacity: 1;}
+	to{transform: rotateY(180deg);opacity: 0;}
+}*/
+
+/*footer start*/
+footer{
+	margin-top: 100px;
+	background: #fafafa;
+	border-top:1px solid #e6e6e6;
+}
+footer .mobile li{
+	transition: all 200ms ease-in;
+}
+footer .mobile li:first-child{
+	font-size: 14px;
+	padding: 12px 0;
+	font-weight: bold;
+	color: #646464;
+}
+footer .mobile li a{
+	font-size: 12px;
+	color: #969696;
+	text-decoration: none;
+}
+footer .mobile li:hover{
+	transform: translateX(4px)
+}
+footer .mobile li:hover a{
+	color: #5079d9;
+}
+footer .copyright{
+	
+}
+/*footer end*/
+
+/*backtop*/
+.Backtop{
+	display: none;
+	width: 54px;
+    height: 54px;
+    background: url(../img/arrow_up.png) no-repeat;
+    background-size: contain;
+    opacity: .62;
+    cursor: pointer;
+	position: fixed;bottom: 50px;right: 24px;
+}
+.Backtop:hover{
+	opacity: 1;
+}

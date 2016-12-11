@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/page1.css" />
+		<!--[if lt IE 9]>-->
+		<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<!--让IE8支持响应式-->
+		<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<!--<![endif]-->
+		<style type="text/css">
+			.item{position: relative;height: 467px;overflow: hidden;}
+			.item img{
+				position: absolute;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="container" style="position:relative; top: 110px;">
+			<!--banner start-->
+			<div class="carousel slide" id="mycarousel" style="margin-bottom: 20px;">
+				<!--小圆点指示器-->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#mycarousel"></li>
+					<li data-slide-to="1" data-target="#mycarousel"></li>
+				</ol>
+
+				<!--图片容器-->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img class="img-responsive" src="img/banner-3d-item-m11-box-1.png" />
+						<img class="guodu1 img-responsive" src="img/banner-3d-item-m11-box-2.png" />
+						<img class="guodu2 img-responsive" src="img/banner-3d-item-m11-box-3.png" />
+					</div>
+					<div class="item">
+						<img class="img-responsive" src="img/banner-3d-item-m12-box-1.png" />
+						<img class="img-responsive" src="img/banner-3d-item-m12-box-2.png" />
+						<img class="img-responsive" src="img/banner-3d-item-m12-box-3.png" />
+					</div>
+				</div>
+
+				<!--左右箭头-->
+				<!--<a class="carousel-control left" data-slide="prev" href="#mycarousel">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+
+				<a class="right carousel-control" href="#mycarousel" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>-->
+			</div>
+			<!--banner end-->
+		</div>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/page1.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			$('.carousel').carousel({
+				interval: 5000
+			})
+		</script>
+	</body>
+
+</html>
